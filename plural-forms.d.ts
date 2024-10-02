@@ -1,7 +1,7 @@
-export declare function getFormula(locale: string): string;
-export declare function getNPlurals(locale: string): string;
-export declare function getPluralFunc(locale: string): string;
-export declare function hasLang(locale: string): boolean; 
-export declare function getPluralFormsHeader(locale: string): string;
-export declare function getAvailLangs(): [string];
-export declare function getExamples(locale:string): {plural: number, sample: number}[];
+export declare function getFormula(language: string): string;
+export declare function getNPlurals(language: string): number;
+export declare function getPluralFunc(language: string): (plural: number, wordForms: string[]) => string;
+export declare function hasLang(language: string): boolean;
+export declare function getPluralFormsHeader(language: string): string;
+export declare function getAvailLangs(): string[];
+export declare function getExamples(language:string): Array<{plural: number, sample: number}>;
